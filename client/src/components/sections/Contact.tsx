@@ -30,12 +30,12 @@ const contactInfo = [
   {
     icon: <Mail className="w-5 h-5" />,
     label: "Email",
-    value: "arpita@example.com"
+    value: "arpitasinha660@gmail.com"
   },
   {
     icon: <Phone className="w-5 h-5" />,
     label: "Phone",
-    value: "+91 1234567890"
+    value: "+91 9693571972"
   },
   {
     icon: <MapPin className="w-5 h-5" />,
@@ -65,7 +65,7 @@ const socialLinks = [
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
-  
+
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
@@ -80,12 +80,12 @@ export default function Contact() {
     try {
       // Simulated form submission delay
       await new Promise(resolve => setTimeout(resolve, 1000));
-      
+
       toast({
         title: "Message sent!",
         description: "Thanks for reaching out. I'll get back to you soon.",
       });
-      
+
       form.reset();
     } catch (error) {
       toast({

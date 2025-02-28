@@ -7,9 +7,9 @@ export default function Hero() {
     <section id="home" className="min-h-screen flex items-center justify-center relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.img
-          src="https://images.unsplash.com/photo-1573496799515-eebbb63814f2"
+          src="/arpita.jpg"
           alt="Arpita"
-          className="w-32 h-32 rounded-full mx-auto mb-8 object-cover"
+          className="w-32 h-32 rounded-full mx-auto mb-8 object-cover border-2 border-[#FF4D4D]"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.5 }}
